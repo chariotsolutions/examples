@@ -1,0 +1,20 @@
+# Java
+*.class
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+
+# Vim
+*.swp
