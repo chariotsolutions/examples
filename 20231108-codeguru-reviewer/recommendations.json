@@ -1,0 +1,1125 @@
+{
+    "RecommendationSummaries": [
+        {
+            "FilePath": "library/aws-facade-v1/src/main/java/com/kdgregory/logging/aws/facade/v1/internal/ClientFactory.java",
+            "RecommendationId": "47a96913358813a9b2105dd7dc09ada7c956d3e4aac3b45ac044f93eeacc4c73",
+            "StartLine": 109,
+            "EndLine": 109,
+            "Description": "Catch `InvocationTargetException` explicitly when you call `Method.invoke()`. Use `Throwable.getCause()` or `getTargetException()` in the catch handler to access more information about the underlying exception. See the following diffs on GitHub that make this code change: [diff1](https://github.com/EsfingeFramework/gamification/commit/20792047e6c69457cca03e877f2ada578188f32a#diff-6808c12fe9ddaea042db84f95dd5ba78adab99d0cb18bb4d85916a8723530768L21), [diff2](https://github.com/cucumber-attic/cuke4duke/commit/f4821d400cf2590126f1298a8dff9f7a33d45dc5#diff-80adaffc20c0e6e7d2e42312386ffe1ddc10213bf5b8e8919895fd85d666c8deL34)\n\nLearn more: [InvocationTargetException in the Java Platform, Standard Edition 8 API Specification](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/InvocationTargetException.html)",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/missing-getcause-on-invocationtargetexception@v1.0",
+                "RuleName": "Missing statement to record cause of InvocationTargetException",
+                "ShortDescription": "Missing statements to record the underlying cause of InvocationTargetException.",
+                "LongDescription": "Missing statements to record the underlying cause of InvocationTargetException might make the code harder to debug.",
+                "RuleTags": [
+                    "maintainability",
+                    "code-quality",
+                    "java"
+                ]
+            },
+            "Severity": "Info"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/aws/kinesis/KinesisWriterConfig.java",
+            "RecommendationId": "49873a2097133c67c9fb5630f3a09a9150ee032f969d42736965f020445b3ff9",
+            "StartLine": 124,
+            "EndLine": 124,
+            "Description": "The cyclomatic complexity of this method is 11. By comparison, 98% of the methods in the CodeGuru reference dataset have a lower cyclomatic complexity. This indicates the method has a high number of decisions and it can make the logic difficult to understand and test.\n\nWe recommend that you simplify this method or break it into multiple methods. For example, consider extracting the code block on lines 128-143 into a separate method.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/code-quality-metrics-cyclomatic-complexity@v1.0",
+                "RuleName": "Low maintainability with high cyclomatic complexity",
+                "ShortDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test.",
+                "LongDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test. Methods with high cyclomatic complexity should be simplified or broken into multiple simpler methods.",
+                "RuleTags": [
+                    "code-quality",
+                    "maintainability",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/common/internal/JsonConverter.java",
+            "RecommendationId": "65e3e4c8252da8d898e6b2e8f9af39c3d3474b12f1a0919f1f506d3e25ea26b9",
+            "StartLine": 65,
+            "EndLine": 65,
+            "Description": "The cyclomatic complexity of this method is 14. By comparison, 99% of the methods in the CodeGuru reference dataset have a lower cyclomatic complexity. This indicates the method has a high number of decisions and it can make the logic difficult to understand and test. We recommend that you simplify this method or break it into multiple methods.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/code-quality-metrics-cyclomatic-complexity@v1.0",
+                "RuleName": "Low maintainability with high cyclomatic complexity",
+                "ShortDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test.",
+                "LongDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test. Methods with high cyclomatic complexity should be simplified or broken into multiple simpler methods.",
+                "RuleTags": [
+                    "code-quality",
+                    "maintainability",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/aws/sns/SNSWriterConfig.java",
+            "RecommendationId": "6952adc7aef82c134170a5618bbc537b946652a3d279c4409382e011dcbdcea4",
+            "StartLine": 114,
+            "EndLine": 114,
+            "Description": "The cyclomatic complexity of this method is 18. By comparison, 99% of the methods in the CodeGuru reference dataset have a lower cyclomatic complexity. This indicates the method has a high number of decisions and it can make the logic difficult to understand and test.\n\nWe recommend that you simplify this method or break it into multiple methods. For example, consider extracting the code block on lines 143-158 into a separate method.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/code-quality-metrics-cyclomatic-complexity@v1.0",
+                "RuleName": "Low maintainability with high cyclomatic complexity",
+                "ShortDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test.",
+                "LongDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test. Methods with high cyclomatic complexity should be simplified or broken into multiple simpler methods.",
+                "RuleTags": [
+                    "code-quality",
+                    "maintainability",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/ParameterStoreTestHelper.java",
+            "RecommendationId": "73009c8798913040e50431bea6920b64b76ab89693bd965bde8644f551e0fd2b",
+            "StartLine": 38,
+            "EndLine": 38,
+            "Description": "Add information about the parameter that you want to add to the system by calling [setDescription()](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simplesystemsmanagement/model/PutParameterRequest.html#setDescription-java.lang.String-) method. Optional but recommended.\n\nSimilar issue at line numbers 39 and 40.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/mandatory-methods@v1.0",
+                "RuleName": "Mandatory method not called after object creation",
+                "ShortDescription": "Mandatory methods must be called after object creation.",
+                "LongDescription": "Object creation must be followed by mandatory methods that must be called on the created object. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "code-quality",
+                    "maintainability",
+                    "cwe-1228",
+                    "java"
+                ]
+            },
+            "Severity": "Info"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/ParameterStoreTestHelper.java",
+            "RecommendationId": "7748d805901c7eb1427912812cb52bdb8c9ce46cfc27979a900e633d0a99e9e3",
+            "StartLine": 38,
+            "EndLine": 38,
+            "Description": "Add information about the parameter that you want to add to the system by calling [setDescription()](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simplesystemsmanagement/model/PutParameterRequest.html#setDescription-java.lang.String-) method. Optional but recommended.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/mandatory-methods@v1.0",
+                "RuleName": "Mandatory method not called after object creation",
+                "ShortDescription": "Mandatory methods must be called after object creation.",
+                "LongDescription": "Object creation must be followed by mandatory methods that must be called on the created object. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "code-quality",
+                    "maintainability",
+                    "cwe-1228",
+                    "java"
+                ]
+            },
+            "Severity": "Info"
+        },
+        {
+            "FilePath": "library/log4j1-appenders/src/main/java/com/kdgregory/log4j/aws/JsonLayout.java",
+            "RecommendationId": "8840e01fd702adba30ebf7fb422db3f63ab29ae583c8c0ea030533b7abf79939",
+            "StartLine": 234,
+            "EndLine": 234,
+            "Description": "The cyclomatic complexity of this method is 13. By comparison, 98% of the methods in the CodeGuru reference dataset have a lower cyclomatic complexity. This indicates the method has a high number of decisions and it can make the logic difficult to understand and test.\n\nWe recommend that you simplify this method or break it into multiple methods. For example, consider extracting the code blocks on lines 255-263, lines 265-274 into separate methods.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/code-quality-metrics-cyclomatic-complexity@v1.0",
+                "RuleName": "Low maintainability with high cyclomatic complexity",
+                "ShortDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test.",
+                "LongDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test. Methods with high cyclomatic complexity should be simplified or broken into multiple simpler methods.",
+                "RuleTags": [
+                    "code-quality",
+                    "maintainability",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/internal/ClientFactory.java",
+            "RecommendationId": "912b47143f43b2ba66bd3ffaece2ac112037f39efb2487a89901372f21abe97e",
+            "StartLine": 113,
+            "EndLine": 113,
+            "Description": "Catch `InvocationTargetException` explicitly when you call `Method.invoke()`. Use `Throwable.getCause()` or `getTargetException()` in the catch handler to access more information about the underlying exception. See the following diffs on GitHub that make this code change: [diff1](https://github.com/EsfingeFramework/gamification/commit/20792047e6c69457cca03e877f2ada578188f32a#diff-6808c12fe9ddaea042db84f95dd5ba78adab99d0cb18bb4d85916a8723530768L21), [diff2](https://github.com/cucumber-attic/cuke4duke/commit/f4821d400cf2590126f1298a8dff9f7a33d45dc5#diff-80adaffc20c0e6e7d2e42312386ffe1ddc10213bf5b8e8919895fd85d666c8deL34)\n\nLearn more: [InvocationTargetException in the Java Platform, Standard Edition 8 API Specification](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/InvocationTargetException.html)",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/missing-getcause-on-invocationtargetexception@v1.0",
+                "RuleName": "Missing statement to record cause of InvocationTargetException",
+                "ShortDescription": "Missing statements to record the underlying cause of InvocationTargetException.",
+                "LongDescription": "Missing statements to record the underlying cause of InvocationTargetException might make the code harder to debug.",
+                "RuleTags": [
+                    "maintainability",
+                    "code-quality",
+                    "java"
+                ]
+            },
+            "Severity": "Info"
+        },
+        {
+            "FilePath": "library/logback-appenders/src/main/java/com/kdgregory/logback/aws/JsonAccessLayout.java",
+            "RecommendationId": "b0734d05b530ceebd653684ee1016bd07ca8a265da8d0d174657d1d62bdc21cb",
+            "StartLine": 426,
+            "EndLine": 426,
+            "Description": "The cyclomatic complexity of this method is 12. By comparison, 98% of the methods in the CodeGuru reference dataset have a lower cyclomatic complexity. This indicates the method has a high number of decisions and it can make the logic difficult to understand and test. We recommend that you simplify this method or break it into multiple methods.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/code-quality-metrics-cyclomatic-complexity@v1.0",
+                "RuleName": "Low maintainability with high cyclomatic complexity",
+                "ShortDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test.",
+                "LongDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test. Methods with high cyclomatic complexity should be simplified or broken into multiple simpler methods.",
+                "RuleTags": [
+                    "code-quality",
+                    "maintainability",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/log4j1-appenders/src/main/java/com/kdgregory/log4j/aws/JsonLayout.java",
+            "RecommendationId": "b414bad29e4df27671cf20601decbd9f99a8f5e0aaa6c95cdd992423879dcc2c",
+            "StartLine": 185,
+            "EndLine": 185,
+            "Description": "The cyclomatic complexity of this method is 12. By comparison, 98% of the methods in the CodeGuru reference dataset have a lower cyclomatic complexity. This indicates the method has a high number of decisions and it can make the logic difficult to understand and test.\n\nWe recommend that you simplify this method or break it into multiple methods. For example, consider extracting the code block on lines 214-229 into a separate method.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "java/code-quality-metrics-cyclomatic-complexity@v1.0",
+                "RuleName": "Low maintainability with high cyclomatic complexity",
+                "ShortDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test.",
+                "LongDescription": "High cyclomatic complexity indicates the method has a high number of decisions and it can make the logic difficult to understand and test. Methods with high cyclomatic complexity should be simplified or broken into multiple simpler methods.",
+                "RuleTags": [
+                    "code-quality",
+                    "maintainability",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/KinesisTestHelper.java",
+            "RecommendationId": "b82e8ca67ea23dcd70e2b0c877524b4383a801a9e39f61a35960541de370314b",
+            "StartLine": 255,
+            "EndLine": 255,
+            "Description": "**Problem**: Iterating over [map.keySet()](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#keySet--) and calling [map.get(Key)](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) to get the values within the loop is inefficient. \n**Fix**: Iterate over [map.entrySet()](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#entrySet--) and access the values using [entry.getValue()](https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html#getValue--) to avoid potential performance penalty due to lookup.",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/iterate-on-map-entries@v1.0",
+                "RuleName": "Inefficient map entry iteration",
+                "ShortDescription": "Iterating on `Map` entries is more efficient than iterating on the keys and asking for their respective values.",
+                "LongDescription": "Iterating on `Map` entries is more efficient than iterating on the keys and asking for their respective values. The additional lookup operation is   saved.",
+                "RuleTags": [
+                    "code-quality",
+                    "efficiency",
+                    "java"
+                ]
+            },
+            "Severity": "Low"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/aws/internal/AbstractLogWriter.java",
+            "RecommendationId": "c2affb7e130048abf70b4f0fa039a68658d4241efad83453d349bfc1d3a4f894",
+            "StartLine": 258,
+            "EndLine": 258,
+            "Description": "**Problem**: InterruptedException is ignored. This can delay thread shutdown and clear the thread’s interrupt status. Only code that implements a thread’s interruption policy can swallow an interruption request.\n\n**Fix**: Rethrow the InterruptedException or reinterrupt the current thread using *Thread.currentThread().interrupt()* so that higher-level interrupt handlers can function correctly.\n If you are wrapping the InterruptedException inside a RuntimeException, call *Thread.currentThread().interrupt()* before throwing the RuntimeException.\n\n**Remember**: Do this only for InterruptedException. Doing this for other types of exceptions may give rise to subtle bugs.\n\nLearn more about [interrupts](https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html) and [dealing with InterruptedException](https://www.ibm.com/developerworks/java/library/j-jtp05236/index.html?ca=drs-#N10187)\n",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/preserve-thread-interruption-status-rule@v1.0",
+                "RuleName": "Preserve thread interruption status rule",
+                "ShortDescription": "Preserve Thread Interruption Status Rule.",
+                "LongDescription": "InterruptedException is ignored. This can delay thread shutdown and clear the thread’s interrupt status. Only code that implements a thread’s interruption policy can swallow an interruption request.",
+                "RuleTags": [
+                    "concurrency",
+                    "code-quality",
+                    "java"
+                ]
+            },
+            "Severity": "High"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/SNSTestHelper.java",
+            "RecommendationId": "d43dd94649026a25c625ae3c18ca266cb3b1879f34047976ad7114cad87bc136",
+            "StartLine": 204,
+            "EndLine": 204,
+            "Description": "This code is using a single API operation, but a batch API operation exists. You could help improve efficiency by using the batch operation instead. The batch operation is deleteMessageBatch.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/batches-preferred-over-loops@v1.0",
+                "RuleName": "Batch operations preferred over looping",
+                "ShortDescription": "Batch operations are more efficient than looping to process several items at the same time.",
+                "LongDescription": "A single API is used inside a loop to process several items, but a batch API operation exists. Use the batch operation to be more efficient.",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "batch-operations",
+                    "code-quality",
+                    "efficiency",
+                    "cwe-1006",
+                    "java"
+                ]
+            },
+            "Severity": "Info"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/SNSTestHelper.java",
+            "RecommendationId": "d9a4340889dfd917553040be10d9ffaea2d9e9c10533cc848ae738b5f92b205d",
+            "StartLine": 202,
+            "EndLine": 202,
+            "Description": "This code is using a single API operation, but a batch API operation exists. You could help improve efficiency by using the batch operation instead. The batch operation is deleteMessageBatch.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/batches-preferred-over-loops@v1.0",
+                "RuleName": "Batch operations preferred over looping",
+                "ShortDescription": "Batch operations are more efficient than looping to process several items at the same time.",
+                "LongDescription": "A single API is used inside a loop to process several items, but a batch API operation exists. Use the batch operation to be more efficient.",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "batch-operations",
+                    "code-quality",
+                    "efficiency",
+                    "cwe-1006",
+                    "java"
+                ]
+            },
+            "Severity": "Info"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/aws/internal/AbstractLogWriter.java",
+            "RecommendationId": "eceba821dc749fd79bf94ddbb1e69b7b9c48a46ecf14888d18267551dd771162",
+            "StartLine": 456,
+            "EndLine": 456,
+            "Description": "**Problem**: InterruptedException is ignored. This can delay thread shutdown and clear the thread’s interrupt status. Only code that implements a thread’s interruption policy can swallow an interruption request.\n\n**Fix**: Rethrow the InterruptedException or reinterrupt the current thread using *Thread.currentThread().interrupt()* so that higher-level interrupt handlers can function correctly.\n If you are wrapping the InterruptedException inside a RuntimeException, call *Thread.currentThread().interrupt()* before throwing the RuntimeException.\n\n**Remember**: Do this only for InterruptedException. Doing this for other types of exceptions may give rise to subtle bugs.\n\nLearn more about [interrupts](https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html) and [dealing with InterruptedException](https://www.ibm.com/developerworks/java/library/j-jtp05236/index.html?ca=drs-#N10187)\n",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/preserve-thread-interruption-status-rule@v1.0",
+                "RuleName": "Preserve thread interruption status rule",
+                "ShortDescription": "Preserve Thread Interruption Status Rule.",
+                "LongDescription": "InterruptedException is ignored. This can delay thread shutdown and clear the thread’s interrupt status. Only code that implements a thread’s interruption policy can swallow an interruption request.",
+                "RuleTags": [
+                    "concurrency",
+                    "code-quality",
+                    "java"
+                ]
+            },
+            "Severity": "High"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/KinesisTestHelper.java",
+            "RecommendationId": "fa31da1aafbf5e804204c2f08798c0466977fc616fd07d49503c02e4ac43731a",
+            "StartLine": 254,
+            "EndLine": 254,
+            "Description": "**Problem**: Iterating over [map.keySet()](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#keySet--) and calling [map.get(Key)](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) to get the values within the loop is inefficient. \n**Fix**: Iterate over [map.entrySet()](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#entrySet--) and access the values using [entry.getValue()](https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html#getValue--) to avoid potential performance penalty due to lookup.",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/iterate-on-map-entries@v1.0",
+                "RuleName": "Inefficient map entry iteration",
+                "ShortDescription": "Iterating on `Map` entries is more efficient than iterating on the keys and asking for their respective values.",
+                "LongDescription": "Iterating on `Map` entries is more efficient than iterating on the keys and asking for their respective values. The additional lookup operation is   saved.",
+                "RuleTags": [
+                    "code-quality",
+                    "efficiency",
+                    "java"
+                ]
+            },
+            "Severity": "Low"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-00513b82d3771772353db0ccf80a3e6ffa57f9406c2cbddcf4cb07d",
+            "StartLine": 193,
+            "EndLine": 193,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "docs/troubleshooting.md",
+            "RecommendationId": "security-021069200a6806f2838c569db175a32465f90d23ea02e55045b1db3",
+            "StartLine": 257,
+            "EndLine": 257,
+            "Description": "It appears your code contains a hardcoded static IP address. This practice significantly increases the risk of security breaches. Anyone aware of this IP can potentially launch targeted attacks on your network, resulting in unauthorized access to your data and misuse of your resources. Possible remediation approaches are:\n\t 1. Manage IP addresses using environment variables:\n\t\t a) Identify the static IP address and store it in an environment variable on your local and production server.\n\t\t b) Replace the hardcoded IP address in your code with references to environment variables.\n\t 2. Use Domain Name System (DNS) for addressing:\n\t\t a) Rather than hardcoding IP addresses, use DNS names that can be mapped to various IP addresses as needed.\n\t\t b) This allows for greater flexibility and resilience in case of changes to your network infrastructure.\n\t 3. Implement proper access control and security measures:\n\t\t a) Ensure that your network firewall rules are up to date and properly configured to prevent unauthorized access.\n\t\t b) Regularly audit your network logs to identify any unusual activity or access attempts from unknown IPs.\n\n To learn more about securely managing IP addresses and best practices, please consult appropriate networking and network security resources.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "text/hardcoded-credentials@v1.0",
+                "RuleName": "Hardcoded credentials",
+                "ShortDescription": "Hardcoded credentials can be intercepted by malicious actors.",
+                "LongDescription": "Hardcoded credentials can be intercepted by malicious actors. Even after removing them from the code they may still pose a risk because an attacker might have recorded them to use them at a later point in time.",
+                "RuleTags": [
+                    "secrets",
+                    "security",
+                    "owasp-top10",
+                    "top25-cwes",
+                    "cwe-798",
+                    "text",
+                    "credsweeper-1.14"
+                ]
+            },
+            "Severity": "Critical"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/KinesisTestHelper.java",
+            "RecommendationId": "security-11ef205083d015235de616325ebea88a370c543db0ba7ad8a5e020a",
+            "StartLine": 81,
+            "EndLine": 81,
+            "Description": "This code might not produce accurate results if the operation returns paginated results instead of all results. Consider adding another call to check for additional results.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/missing-pagination@v1.0",
+                "RuleName": "Missing pagination",
+                "ShortDescription": "Additional results are not checked for a paginated API call. This might produce inaccurate results. ",
+                "LongDescription": "Paginated results are returned instead of all results. If additional results are not checked, this might produce inaccurate results. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-19",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/KinesisTestHelper.java",
+            "RecommendationId": "security-1232978fde0b3c1e13a7160b76085883585775cb04c5ee130d8d9f5",
+            "StartLine": 152,
+            "EndLine": 152,
+            "Description": "Consider enhanced fan-out: an Amazon Kinesis Data Streams feature that enables consumers to receive records from a data stream with dedicated throughput of up to 2 MiB of data per second per shard. A consumer that uses enhanced fan-out doesn't have to contend with other consumers that are receiving data from the stream. See [Developing Consumers with Enhanced Fan-Out Using the Kinesis Data Streams API](https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-consumers-api.html).",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/not-recommended-apis@v1.0",
+                "RuleName": "Usage of an API that is not recommended",
+                "ShortDescription": "APIs that are not recommended were found.",
+                "LongDescription": "APIs that are not recommended were found. This could indicate a deeper problem in the code.",
+                "RuleTags": [
+                    "security",
+                    "security-context",
+                    "java"
+                ]
+            },
+            "Severity": "High"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/SNSTestHelper.java",
+            "RecommendationId": "security-193125027064cd3a5fbe75e38643045fab37e7717dfc10c015bdfd4",
+            "StartLine": 260,
+            "EndLine": 260,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/aws/facade/FacadeFactory.java",
+            "RecommendationId": "security-2e1d6a205f824c887af55304537458c01ae250df94268fade1c2c91",
+            "StartLine": 85,
+            "EndLine": 85,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v1/src/main/java/com/kdgregory/logging/aws/facade/v1/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-2fe925acb1f2f69b22a0990109099331d3d378143d1ba830002794b",
+            "StartLine": 158,
+            "EndLine": 158,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/KinesisTestHelper.java",
+            "RecommendationId": "security-3fb98f3a30f7cb3e794b5d590a365d23a2344c52b2b622ce13211bb",
+            "StartLine": 87,
+            "EndLine": 87,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v1/src/main/java/com/kdgregory/logging/aws/facade/v1/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-431b21582e8306aafab00c1db72c9e9ef0c13afdf133a89da943a6e",
+            "StartLine": 119,
+            "EndLine": 119,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "examples/log4j1-webapp/src/main/java/com/kdgregory/log4j/aws/example/ExampleServlet.java",
+            "RecommendationId": "security-4fe44bf788b2ff678b71368f2b82b48427397ddb19e2214d0058b24",
+            "StartLine": 74,
+            "EndLine": 74,
+            "Description": "You have an outgoing server response that uses potentially unsanitized external inputs. This can lead to Cross-site Scripting  (XSS) attack allowing an attacker to bypass access controls and execute malicious code remotely on clients. \n\nMitigation : To prevent XSS attacks, make sure to sanitize and escape responses used in models, views, or controllers. You can use encoders such as `StringEscapeUtils.escapeHtml` or `org.owasp.html.HtmlSanitizer` for HTML content, and `URLEncoder` for URL contexts. See `org.owasp.esapi.Encoder` for escaping in other contexts such as HTML attributes, CSS data, DOM and embedded scripts.[Learn more](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)",
+            "RecommendationCategory": "SecurityIssues",
+            "RuleMetadata": {
+                "RuleId": "java/cross-site-scripting@v1.0",
+                "RuleName": "Cross-site scripting",
+                "ShortDescription": "Relying on potentially untrusted user inputs when constructing web application outputs can lead to cross-site scripting vulnerabilities.",
+                "LongDescription": "User-controllable input must be sanitized before it's included in output used to dynamically generate a web page. Unsanitized user input can introduce cross-side scripting (XSS) vulnerabilities that can lead to inadvertedly running malicious code in a trusted context.",
+                "RuleTags": [
+                    "injection",
+                    "security",
+                    "owasp-top10",
+                    "top25-cwes",
+                    "cwe-79",
+                    "java"
+                ]
+            },
+            "Severity": "High"
+        },
+        {
+            "FilePath": "examples/log4j2-webapp/src/main/java/com/kdgregory/log4j2/aws/example/ExampleServlet.java",
+            "RecommendationId": "security-54b51ff8479ec872b4a1991a00d53bd798b49c404583959bc43f9e4",
+            "StartLine": 77,
+            "EndLine": 77,
+            "Description": "You have an outgoing server response that uses potentially unsanitized external inputs. This can lead to Cross-site Scripting  (XSS) attack allowing an attacker to bypass access controls and execute malicious code remotely on clients. \n\nMitigation : To prevent XSS attacks, make sure to sanitize and escape responses used in models, views, or controllers. You can use encoders such as `StringEscapeUtils.escapeHtml` or `org.owasp.html.HtmlSanitizer` for HTML content, and `URLEncoder` for URL contexts. See `org.owasp.esapi.Encoder` for escaping in other contexts such as HTML attributes, CSS data, DOM and embedded scripts.[Learn more](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)",
+            "RecommendationCategory": "SecurityIssues",
+            "RuleMetadata": {
+                "RuleId": "java/cross-site-scripting@v1.0",
+                "RuleName": "Cross-site scripting",
+                "ShortDescription": "Relying on potentially untrusted user inputs when constructing web application outputs can lead to cross-site scripting vulnerabilities.",
+                "LongDescription": "User-controllable input must be sanitized before it's included in output used to dynamically generate a web page. Unsanitized user input can introduce cross-side scripting (XSS) vulnerabilities that can lead to inadvertedly running malicious code in a trusted context.",
+                "RuleTags": [
+                    "injection",
+                    "security",
+                    "owasp-top10",
+                    "top25-cwes",
+                    "cwe-79",
+                    "java"
+                ]
+            },
+            "Severity": "High"
+        },
+        {
+            "FilePath": "docs/troubleshooting.md",
+            "RecommendationId": "security-58663fb79b954f6ee7d880d32189c52e210055a6cb4fa49a5fe4c0a",
+            "StartLine": 256,
+            "EndLine": 256,
+            "Description": "It appears your code contains a hardcoded static IP address. This practice significantly increases the risk of security breaches. Anyone aware of this IP can potentially launch targeted attacks on your network, resulting in unauthorized access to your data and misuse of your resources. Possible remediation approaches are:\n\t 1. Manage IP addresses using environment variables:\n\t\t a) Identify the static IP address and store it in an environment variable on your local and production server.\n\t\t b) Replace the hardcoded IP address in your code with references to environment variables.\n\t 2. Use Domain Name System (DNS) for addressing:\n\t\t a) Rather than hardcoding IP addresses, use DNS names that can be mapped to various IP addresses as needed.\n\t\t b) This allows for greater flexibility and resilience in case of changes to your network infrastructure.\n\t 3. Implement proper access control and security measures:\n\t\t a) Ensure that your network firewall rules are up to date and properly configured to prevent unauthorized access.\n\t\t b) Regularly audit your network logs to identify any unusual activity or access attempts from unknown IPs.\n\n To learn more about securely managing IP addresses and best practices, please consult appropriate networking and network security resources.",
+            "RecommendationCategory": "CodeMaintenanceIssues",
+            "RuleMetadata": {
+                "RuleId": "text/hardcoded-credentials@v1.0",
+                "RuleName": "Hardcoded credentials",
+                "ShortDescription": "Hardcoded credentials can be intercepted by malicious actors.",
+                "LongDescription": "Hardcoded credentials can be intercepted by malicious actors. Even after removing them from the code they may still pose a risk because an attacker might have recorded them to use them at a later point in time.",
+                "RuleTags": [
+                    "secrets",
+                    "security",
+                    "owasp-top10",
+                    "top25-cwes",
+                    "cwe-798",
+                    "text",
+                    "credsweeper-1.14"
+                ]
+            },
+            "Severity": "Critical"
+        },
+        {
+            "FilePath": "library/log4j1-appenders/src/main/java/com/kdgregory/log4j/aws/internal/Utils.java",
+            "RecommendationId": "security-71e2dc532a782989582c9ec2ec4c57a9d95f0f9ea02f49c465ee639",
+            "StartLine": 54,
+            "EndLine": 54,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/aws/cloudwatch/CloudWatchLogWriter.java",
+            "RecommendationId": "security-747db82d934ede82f278b59a4e1b699e2440bd46e8a8ed14452ab19",
+            "StartLine": 147,
+            "EndLine": 147,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/InfoFacadeImpl.java",
+            "RecommendationId": "security-79bd32ed062ef780d99ad04d65d42d1ae2dd539a0b8c71eb8499736",
+            "StartLine": 158,
+            "EndLine": 158,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/InfoFacadeImpl.java",
+            "RecommendationId": "security-7ea1af4b881ca4031b22a5ba79ee739f4fb5737089cf21f104275b6",
+            "StartLine": 108,
+            "EndLine": 108,
+            "Description": "This code might not produce accurate results if the operation returns paginated results instead of all results. Consider adding another call to check for additional results.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/missing-pagination@v1.0",
+                "RuleName": "Missing pagination",
+                "ShortDescription": "Additional results are not checked for a paginated API call. This might produce inaccurate results. ",
+                "LongDescription": "Paginated results are returned instead of all results. If additional results are not checked, this might produce inaccurate results. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-19",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/common/util/MessageQueue.java",
+            "RecommendationId": "security-858dfffe952babf169c6cb48de53eeb4f8cb1f77c7b1557e0be9ae2",
+            "StartLine": 68,
+            "EndLine": 68,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-874a1d27c46f5c86a1b6f4aa4142ba742ce2173b939bf742b5a82a7",
+            "StartLine": 160,
+            "EndLine": 160,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/RoleTestHelper.java",
+            "RecommendationId": "security-87bc32dfdbc0676b62d1c62331a76a7417e54ab20ddfc6900db1828",
+            "StartLine": 99,
+            "EndLine": 99,
+            "Description": "This code creates an IAM policy manually. To help reduce potential errors, consider creating the policy using the SDK policy objects. Object name: com.amazonaws.auth.policy.Policy.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/aws-iam-error-prone-policy@v1.0",
+                "RuleName": "Error-prone AWS IAM policy creation",
+                "ShortDescription": "Manually creating text-based IAM policies is error-prone.",
+                "LongDescription": "Creating an IAM policy manually via string manipulation is error-prone. Create IAM policies using the `Policy` class in the AWS IAM SDK.",
+                "RuleTags": [
+                    "access-control",
+                    "aws-java-sdk",
+                    "aws-iam",
+                    "consistency",
+                    "maintainability",
+                    "security",
+                    "owasp-top10",
+                    "cwe-547",
+                    "java"
+                ]
+            },
+            "Severity": "Low"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-87c68e402163ab29d8d6b499d3fca7579609b320c9019e72ba7c195",
+            "StartLine": 233,
+            "EndLine": 233,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v2/src/main/java/com/kdgregory/logging/aws/facade/v2/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-8eaf65ecc4b13d5ea04cf342d850c6e138827db7ac2180f05071da3",
+            "StartLine": 121,
+            "EndLine": 121,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "examples/logback-webapp/src/main/java/com/kdgregory/logback/aws/example/ExampleServlet.java",
+            "RecommendationId": "security-9026595607fb2c86bea180cc07647dd7a3aecc735feaf5137155082",
+            "StartLine": 75,
+            "EndLine": 75,
+            "Description": "You have an outgoing server response that uses potentially unsanitized external inputs. This can lead to Cross-site Scripting  (XSS) attack allowing an attacker to bypass access controls and execute malicious code remotely on clients. \n\nMitigation : To prevent XSS attacks, make sure to sanitize and escape responses used in models, views, or controllers. You can use encoders such as `StringEscapeUtils.escapeHtml` or `org.owasp.html.HtmlSanitizer` for HTML content, and `URLEncoder` for URL contexts. See `org.owasp.esapi.Encoder` for escaping in other contexts such as HTML attributes, CSS data, DOM and embedded scripts.[Learn more](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)",
+            "RecommendationCategory": "SecurityIssues",
+            "RuleMetadata": {
+                "RuleId": "java/cross-site-scripting@v1.0",
+                "RuleName": "Cross-site scripting",
+                "ShortDescription": "Relying on potentially untrusted user inputs when constructing web application outputs can lead to cross-site scripting vulnerabilities.",
+                "LongDescription": "User-controllable input must be sanitized before it's included in output used to dynamically generate a web page. Unsanitized user input can introduce cross-side scripting (XSS) vulnerabilities that can lead to inadvertedly running malicious code in a trusted context.",
+                "RuleTags": [
+                    "injection",
+                    "security",
+                    "owasp-top10",
+                    "top25-cwes",
+                    "cwe-79",
+                    "java"
+                ]
+            },
+            "Severity": "High"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/common/internal/Utils.java",
+            "RecommendationId": "security-96d55f44d279c76490ad8e838f388808489e0b73d2e563b2cbef5c7",
+            "StartLine": 71,
+            "EndLine": 71,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/SNSTestHelper.java",
+            "RecommendationId": "security-a1c33eb15d218d06da4dd8ac64d51d49c17170216370ae4ce65f9e1",
+            "StartLine": 262,
+            "EndLine": 262,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/common/internal/Utils.java",
+            "RecommendationId": "security-aacb5e34ebe3ade6e2830febbd6d8beec51a34dce7f5cec9775ca39",
+            "StartLine": 82,
+            "EndLine": 82,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v1/src/main/java/com/kdgregory/logging/aws/facade/v1/InfoFacadeImpl.java",
+            "RecommendationId": "security-ae6bf4fbcc5c4165282997ec16b43e5fd538838e3dac92fecb8be6d",
+            "StartLine": 159,
+            "EndLine": 159,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v1/src/main/java/com/kdgregory/logging/aws/facade/v1/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-b417f422857fe6c96d8f30938eaaacbd5e69cc4162795d5a6b919f3",
+            "StartLine": 229,
+            "EndLine": 229,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/aws-facade-v1/src/main/java/com/kdgregory/logging/aws/facade/v1/CloudWatchFacadeImpl.java",
+            "RecommendationId": "security-b5ccbb91040a1d6c19c7444ab67b7f853ad5a40cf068a99024702e6",
+            "StartLine": 190,
+            "EndLine": 190,
+            "Description": "**Problem**: While re-throwing the caught exception with modifications , information about the caught exception is being lost, including information about the stack trace of the exception.\n\n**Fix**: If the caught exception object does not contain sensitive information, consider passing it as the \"rootCause\" or inner exception parameter to the constructor of the new exception before throwing the new exception. (Note that not all exception constructors support inner exceptions. Use a wrapper exception that supports inner exceptions.) \n[Learn more](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/throw-exception-with-trace@v1.0",
+                "RuleName": "Stack trace not included in re-thrown exception",
+                "ShortDescription": "When re-throwing an exception, make sure to include the stack trace.",
+                "LongDescription": "When re-throwing an exception, make sure to include the stack trace. Otherwise pertinent debug information is lost.",
+                "RuleTags": [
+                    "data-integrity",
+                    "maintainability",
+                    "security",
+                    "security-context",
+                    "cwe-755",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/RoleTestHelper.java",
+            "RecommendationId": "security-bd9955d17c23ccee858480c2c3eff4cf8d6ca9c221cb15e4160fffb",
+            "StartLine": 165,
+            "EndLine": 165,
+            "Description": "This code might not produce accurate results if the operation returns paginated results instead of all results. Consider adding another call to check for additional results.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/missing-pagination@v1.0",
+                "RuleName": "Missing pagination",
+                "ShortDescription": "Additional results are not checked for a paginated API call. This might produce inaccurate results. ",
+                "LongDescription": "Paginated results are returned instead of all results. If additional results are not checked, this might produce inaccurate results. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-19",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/CloudWatchTestHelper.java",
+            "RecommendationId": "security-cbceb1eb4bc2e232ca98294a0b53c49a6ad5cb9a589361ad846f406",
+            "StartLine": 265,
+            "EndLine": 265,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/SNSTestHelper.java",
+            "RecommendationId": "security-d168af8c38e970aa825c652e99459cd9e5fe9356aac931352d2e013",
+            "StartLine": 290,
+            "EndLine": 290,
+            "Description": "This code might not produce accurate results if the operation returns paginated results instead of all results. Consider adding another call to check for additional results.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/missing-pagination@v1.0",
+                "RuleName": "Missing pagination",
+                "ShortDescription": "Additional results are not checked for a paginated API call. This might produce inaccurate results. ",
+                "LongDescription": "Paginated results are returned instead of all results. If additional results are not checked, this might produce inaccurate results. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-19",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/SNSTestHelper.java",
+            "RecommendationId": "security-d3d4dcc89b4d16976bdfbcb5b75d858bbb6d14497a3b25e5a14f4b7",
+            "StartLine": 288,
+            "EndLine": 288,
+            "Description": "This code might not produce accurate results if the operation returns paginated results instead of all results. Consider adding another call to check for additional results.",
+            "RecommendationCategory": "AWSBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/missing-pagination@v1.0",
+                "RuleName": "Missing pagination",
+                "ShortDescription": "Additional results are not checked for a paginated API call. This might produce inaccurate results. ",
+                "LongDescription": "Paginated results are returned instead of all results. If additional results are not checked, this might produce inaccurate results. ",
+                "RuleTags": [
+                    "aws-java-sdk",
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-19",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "library/logwriters/src/main/java/com/kdgregory/logging/common/internal/Utils.java",
+            "RecommendationId": "security-e62d9e35b14dec329753aecef08490636b24e9c96f952a851014b5e",
+            "StartLine": 53,
+            "EndLine": 53,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v1/src/main/java/com/kdgregory/logging/testhelpers/CloudWatchTestHelper.java",
+            "RecommendationId": "security-f2af2eadcbd2f1a824df9ea805bce16021c6eb70ca9fffc4ab615d0",
+            "StartLine": 268,
+            "EndLine": 268,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        },
+        {
+            "FilePath": "integration-tests/helpers/itest-helper-v2/src/main/java/com/kdgregory/logging/testhelpers/KinesisTestHelper.java",
+            "RecommendationId": "security-ff12df38fa0fdd3ab662b41548f41100ac27502b43883f5fd94c92f",
+            "StartLine": 86,
+            "EndLine": 86,
+            "Description": "**Problem**: An exception has been ignored. The catch-block hides information about the stack trace. Not logging or forwarding the stack trace of an exception can mask unexpected errors and complicated debugging.\n\n**Fix**: Use a catch block to handle the exception and write a log message declaring that the exception happened. \n[Learn more.](https://www.ibm.com/support/pages/best-practice-catching-and-re-throwing-java-exceptions)",
+            "RecommendationCategory": "JavaBestPractices",
+            "RuleMetadata": {
+                "RuleId": "java/unhandled-exceptions@v1.0",
+                "RuleName": "Catching and not re-throwing or logging exceptions",
+                "ShortDescription": "It's not good practice to catch an exception and then re-throw or log it.",
+                "LongDescription": "It's not good practice to catch an exception and then not   re-throw or log it. Re-throwing or logging an exception ensures the stack trace   and other information is preserved.",
+                "RuleTags": [
+                    "data-integrity",
+                    "security",
+                    "security-context",
+                    "cwe-390",
+                    "java"
+                ]
+            },
+            "Severity": "Medium"
+        }
+    ]
+}
