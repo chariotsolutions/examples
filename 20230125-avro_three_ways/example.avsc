@@ -1,0 +1,39 @@
+{
+  "namespace": "com.chariotsolutions.example.avro",
+  "type": "record",
+  "name": "CheckoutComplete",
+  "fields": [
+    {
+      "name": "eventType",
+      "type": "string"
+    },
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "userId",
+      "type": "string"
+    },
+    {
+      "name": "itemsInCart",
+      "type": "int"
+    },
+    {
+      "name": "totalValue",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 16,
+        "scale": 2
+      }
+    }
+  ]
+}
